@@ -1,0 +1,29 @@
+﻿name: Pull Request Check
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  pr-check:
+    name: PR Quality Check
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Check for merge conflicts
+      run: |
+        git fetch origin ${{ github.base_ref }}
+        if git merge-tree $(git merge-base HEAD origin/${{ github.base_ref }}) HEAD origin/${{ github.base_ref }} | grep -q '<<<<<'; then
+          echo "Merge conflicts detected"
+          exit 1
+        fi
+        
+    - name: Validate file structure
+      run: |
+        if [ ! -d "android" ] || [ ! -d "backend" ]; then
+          echo "Required directories missing"
+          exit 1
+        fi
