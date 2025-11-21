@@ -1,0 +1,170 @@
+﻿# ======================================
+# Personal Finance Application - Monorepo
+# ======================================
+
+# ======================================
+# Android Project
+# ======================================
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+android/bin/
+android/gen/
+android/out/
+android/app/build/
+android/build/
+android/.gradle/
+
+# Gradle files
+.gradle/
+android/.gradle/
+backend/.gradle/
+
+# Local configuration file (SDK path, etc)
+android/local.properties
+backend/local.properties
+
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/jarRepositories.xml
+.idea/caches
+.idea/modules.xml
+.idea/.name
+.idea/compiler.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/navEditor.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build
+android/.externalNativeBuild
+android/.cxx/
+android/app/.externalNativeBuild/
+android/app/.cxx/
+
+# Android Studio captures folder
+android/captures/
+
+# NDK
+android/obj/
+
+# Android Profiler
+*.hprof
+
+# ======================================
+# Backend (Spring Boot)
+# ======================================
+
+backend/build/
+backend/target/
+backend/out/
+backend/.gradle/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# Spring Boot
+backend/HELP.md
+backend/.spring-boot-devtools.properties
+
+# Database
+*.db
+*.sqlite
+*.h2.db
+backend/*.db
+backend/*.sqlite
+
+# ======================================
+# General
+# ======================================
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+*.txt.log
+*build*.txt
+*error*.txt
+*compile*.txt
+android/*build*.txt
+android/*error*.txt
+android/*compile*.txt
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE-specific
+.vscode/
+.project
+.classpath
+.settings/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# Backup files
+*.bak
+*.backup
